@@ -37,8 +37,8 @@ int scanhash_yespower(int thr_id, uint32_t *pdata, const uint32_t *ptarget,
         uint32_t endiandata[32];
 	yespower_params_t params = {
 		.version = YESPOWER_0_5,
-		.N = 2048,
-		.r = 8,
+		.N = 131072,
+		.r = 32,
 		.pers = (const uint8_t *)endiandata,
 		.perslen = perslen
 	};
